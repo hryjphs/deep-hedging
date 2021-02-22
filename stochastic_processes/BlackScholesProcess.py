@@ -9,7 +9,7 @@ from tqdm import trange
 
 # Assigned seed for testing. Set to 0 for random seeds.
 
-# Geometric Brownian Motion.
+# Geometric Brownian Motion. day_count is a day convention (daycounter). This calendar ql.NullCalendar() has no holidays
 class BlackScholesProcess:
 	def __init__(self,s0 = None, sigma = None, risk_free = None, \
 					dividend = None, day_count = None, seed=0):
